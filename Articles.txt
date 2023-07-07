@@ -1,0 +1,41 @@
+-Arroces:
++Arroz blanco y habichuelas rojas
++Arroz con fideos
++Arroz con vegetales
++Moro de habichuelas rojas
++Moro de habichuelas negras
++Moro de guandules
++Locrio de pollo
++Locrio de arenque
+
+-Acompañates:
++Pollo al horno
++Pollo frito
++Pollo guisado
++Pechuga a la plancha
++Pechuga de pollo a la crema
++Cerdo al caldero
++Bistec encebollado
++Bistec guisado
++Albondigas de res
++Chuletas a la plancha
++Costillas agridulces
++Mero frito
++Espaguetis a la criolla
++Berenjena guisada
+
+-Ensaladas:
++Verde
++Mixta
++Rusa
++Vegetales hervidos
++Tayota y huevos
++Tipile
+
+-Adicionales:
++Fritos maduros
++Platanos en almibar
++Torrejas de berenjenaS
++Pastelon de platano maduro con res
++Lasaña de res
++Lasaña de pollo
