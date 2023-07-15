@@ -7,7 +7,7 @@
 +Moro de guandules
 +Locrio de pollo
 +Locrio de arenque
-
+==
 -Acompañates:
 +Pollo al horno
 +Pollo frito
@@ -23,7 +23,7 @@
 +Mero frito
 +Espaguetis a la criolla
 +Berenjena guisada
-
+==
 -Ensaladas:
 +Verde
 +Mixta
@@ -31,7 +31,7 @@
 +Vegetales hervidos
 +Tayota y huevos
 +Tipile
-
+==
 -Adicionales:
 +Fritos maduros
 +Platanos en almibar
