@@ -2,7 +2,13 @@ import 'dart:async';
 import 'dart:io';
 import './Articles.dart';
 
-enum Day { Lunes, Martes, Miercoles, Jueves, Viernes, Sabado }
+final days = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
+final qty_articles = [
+  3,
+  6,
+  3,
+  3
+]; //Estos indices definen el numero de articulos por categoría
 
 void main(List<String> args) {
   String output = "";
@@ -10,6 +16,19 @@ void main(List<String> args) {
   String file_content = read_article_file();
   articles = create_Articles(file_content);
 
+  for (var day in days) {
+    output += "===$day===\n";
+    for (var i = 0; i < articles.length; i++) {
+      output += "+${articles[i].get_name()}\n";
+      List<String> alist = articles[i].randomized_list(qty_articles[i]);
+      for (var article in alist) {
+        output += "-$article\n";
+      }
+      output += '\n';
+    }
+  }
+  write_menuFile(output);
+  print(output);
   return;
 }
 
@@ -17,6 +36,13 @@ String read_article_file() {
   File file = File("./Articles.txt");
   String content = file.readAsStringSync();
   return content;
+}
+
+void write_menuFile(String content) {
+  final file = File("Menu.txt");
+  var sink = file.openWrite();
+  sink.write(content);
+  sink.close();
 }
 
 List<Articles> create_Articles(String content) {

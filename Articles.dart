@@ -16,8 +16,21 @@ class Articles {
     return this._article_list;
   }
 
+  String get_name() {
+    return this._category_name;
+  }
+
   List<String> randomized_list(int no_articles) {
-    int index_random = Random().nextInt(no_articles);
-    return List.empty();
+    List<String> articles = List.empty(growable: true);
+    int flag = 0;
+    while (flag < no_articles) {
+      int index_random = Random().nextInt(this._article_list.length);
+      String article = this._article_list.elementAt(index_random);
+      if (!articles.contains(article)) {
+        articles.add(article);
+        flag++;
+      }
+    }
+    return articles;
   }
 }
