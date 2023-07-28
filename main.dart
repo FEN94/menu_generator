@@ -1,14 +1,9 @@
-import 'dart:async';
 import 'dart:io';
 import './Articles.dart';
 
 final days = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado"];
-final qty_articles = [
-  3,
-  6,
-  3,
-  3
-]; //Estos indices definen el numero de articulos por categoría
+//Estos indices definen el numero de articulos por categoría
+final qty_articles = [3, 6, 3, 3];
 
 void main(List<String> args) {
   String output = "";
@@ -17,7 +12,9 @@ void main(List<String> args) {
   articles = create_Articles(file_content);
 
   for (var day in days) {
-    output += "===$day===\n";
+    output += "============\n";
+    output += "$day\n";
+    output += "============\n";
     for (var i = 0; i < articles.length; i++) {
       output += "+${articles[i].get_name()}\n";
       List<String> alist = articles[i].randomized_list(qty_articles[i]);

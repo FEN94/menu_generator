@@ -1,30 +1,65 @@
 -Arroces:
 +Arroz blanco y habichuelas rojas
++Arroz chino
 +Arroz con fideos
++Arroz con maíz
 +Arroz con vegetales
++Chofan mixto
 +Moro de habichuelas rojas
 +Moro de habichuelas negras
 +Moro de guandules
 +Locrio de pollo
 +Locrio de arenque
 ==
--Acompañates:
+-Acompañantes:
++Albondigas de pollo
++Albondigas de res
++Bacalao guisado
++Bastoncitos de mero
++Berenjena guisada
++Bistec con vegetales
++Bistec encebollado
++Bistec guisado
++Bistec guisado con papas
++Carne de res mechada
++Carne salada de cerdo
++Cerdo agridulce
++Cerdo al caldero
++Cerdo al vino
++Cerdo con brocoli
++Cerdo frito
++Cerdo guisado
++Chicharron de pollo
++Chuletas a la plancha
++Chuletas guisadas
++Costillas BBQ
++Costillas agridulces
++Espaguetis a la criolla
++Espaguetis en salsa blanca
++Higado de res encebollado
++Mero al ajillo
++Mero frito
++Mero guisado
++Mondongo
++Paticas de cerdo
++Pechuga a la plancha
++Pechuga de pollo a la crema
++Pechuga de pollo al limón
++Pechuga de pollo al vino
++Pechuga de pollo rellena
++Pollo al caldero
 +Pollo al horno
 +Pollo frito
 +Pollo guisado
-+Pechuga a la plancha
-+Pechuga de pollo a la crema
-+Cerdo al caldero
-+Bistec encebollado
-+Bistec guisado
-+Albondigas de res
-+Chuletas a la plancha
-+Costillas agridulces
-+Mero frito
-+Espaguetis a la criolla
-+Berenjena guisada
++Rabo de res
++Res a la cantonesa
++Ropa vieja
++Tayota guisadas
 ==
 -Ensaladas:
++Coditos
++Coleslaw
++Papas con huevos
 +Verde
 +Mixta
 +Rusa
@@ -33,9 +68,15 @@
 +Tipile
 ==
 -Adicionales:
++Arepitas de maíz
++Arepitas de yuca
++Batatas fritas
 +Fritos maduros
 +Platanos en almibar
 +Torrejas de berenjenas
 +Pastelon de platano maduro con res
++Pastelon de platano maduro con pollo
++Pastelon de platano maduro con queso
++Pastelon de papa con res
 +Lasaña de res
 +Lasaña de pollo
