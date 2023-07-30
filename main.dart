@@ -16,7 +16,7 @@ void main(List<String> args) {
     output += "$day\n";
     output += "============\n";
     for (var i = 0; i < articles.length; i++) {
-      output += "+${articles[i].get_name()}\n";
+      output += "+${articles[i].get_name()}:\n";
       List<String> alist = articles[i].randomized_list(qty_articles[i]);
       for (var article in alist) {
         output += "-$article\n";
@@ -54,11 +54,22 @@ List<Articles> create_Articles(String content) {
         articles = Articles(category_content
             .elementAt(i)
             .replaceAll("-", "")
-            .replaceAll(":", ""));
+            .replaceAll(":", "")
+            .trim());
       } else {
         if (!category_content.elementAt(i).isEmpty) {
-          articles
-              .add_article(category_content.elementAt(i).replaceAll("+", ""));
+          if (category_content[i].contains("*")) {
+            articles.add_priority_article(category_content
+                .elementAt(i)
+                .replaceAll("+", "")
+                .replaceAll("*", "")
+                .trim());
+          }
+          articles.add_article(category_content
+              .elementAt(i)
+              .replaceAll("*", "")
+              .replaceAll("+", "")
+              .trim());
         }
       }
     }
