@@ -1,5 +1,5 @@
 -Arroces:
-+Arroz blanco y habichuelas rojas
++*Arroz blanco y habichuelas rojas
 +Arroz chino
 +Arroz con fideos
 +Arroz con maíz
@@ -48,8 +48,8 @@
 +Pechuga de pollo al vino
 +Pechuga de pollo rellena
 +Pollo al caldero
-+Pollo al horno
-+Pollo frito
++*Pollo al horno
++*Pollo frito
 +Pollo guisado
 +Rabo de res
 +Res a la cantonesa
