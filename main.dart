@@ -10,7 +10,14 @@ void main(List<String> args) {
   List<Articles> articles = List<Articles>.empty();
   String file_content = read_article_file();
   articles = create_Articles(file_content);
+  output = create_menu(articles);
+  write_menuFile(output);
+  print(output);
+  return;
+}
 
+String create_menu(List<Articles> articles) {
+  String output = "";
   for (var day in days) {
     output += "============\n";
     output += "$day\n";
@@ -24,9 +31,7 @@ void main(List<String> args) {
       output += '\n';
     }
   }
-  write_menuFile(output);
-  print(output);
-  return;
+  return output;
 }
 
 String read_article_file() {
