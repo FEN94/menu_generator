@@ -25,7 +25,8 @@ class Articles {
     return this._category_name;
   }
 
-  List<String> randomized_list(int no_articles) {
+  List<String> randomized_list(
+      int no_articles, List<String> articles_selected) {
     List<String> articles = List.empty(growable: true);
     int flag = 0;
     bool beef = false, pork = false;
@@ -54,6 +55,8 @@ class Articles {
       if (!articles.contains(article) &&
           !article.contains("Bistec") &&
           !article.contains("Cerdo")) {
+        if (articles_selected.contains(article) &&
+            this._category_name == "Acompañantes") continue;
         articles.add(article);
         flag++;
       }

@@ -17,6 +17,7 @@ void main(List<String> args) {
 }
 
 String create_menu(List<Articles> articles) {
+  List<String> articles_selected = List.empty(growable: true);
   String output = "";
   for (var day in days) {
     output += "============\n";
@@ -24,7 +25,11 @@ String create_menu(List<Articles> articles) {
     output += "============\n";
     for (var i = 0; i < articles.length; i++) {
       output += "+${articles[i].get_name()}:\n";
-      List<String> alist = articles[i].randomized_list(qty_articles[i]);
+      List<String> alist =
+          articles[i].randomized_list(qty_articles[i], articles_selected);
+      for (var i = 0; i < alist.length; i++) {
+        articles_selected.add(alist[i]);
+      }
       for (var article in alist) {
         output += "-$article\n";
       }
